@@ -1,0 +1,2 @@
+urllib3==1.14
+futures==3.0.4
