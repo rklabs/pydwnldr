@@ -3,7 +3,7 @@ Multi threaded downloader in python
 
 __Single thread__
 ```
-rkadam@rkadam-vbox:~/github/pydwnldr/src$ time wget http://goo.gl/cyVuir
+rkadam@rkadam-vbox:~/github/pydwnldr/src$ time wget http://ubuntu.mirrors.tds.net/pub/releases/15.10/ubuntu-15.10-desktop-amd64.iso
 --2016-01-28 15:47:20--  http://ubuntu.mirrors.tds.net/pub/releases/15.10/ubuntu-15.10-desktop-amd64.iso
 Resolving ubuntu.mirrors.tds.net (ubuntu.mirrors.tds.net)... 64.50.236.222
 Connecting to ubuntu.mirrors.tds.net (ubuntu.mirrors.tds.net)|64.50.236.222|:80... connected.
@@ -22,7 +22,7 @@ sys     0m29.884s
 ```
 __4 Threads__
 ```
-(pydwnldr)rkadam@rkadam-vbox:~/github/pydwnldr/src$ time python dwnldr.py http://goo.gl/cyVuir
+(pydwnldr)rkadam@rkadam-vbox:~/github/pydwnldr/src$ time python dwnldr.py http://ubuntu.mirrors.tds.net/pub/releases/15.10/ubuntu-15.10-desktop-amd64.iso
 Downloading ubuntu-15.10-desktop-amd64.iso 1178386432 bytes
 
 real    5m53.696s
@@ -31,7 +31,7 @@ sys     0m32.244s
 ```
 __8 Threads__
 ```
-(pydwnldr)rkadam@rkadam-vbox:~/github/pydwnldr/src$ time python dwnldr.py http://goo.gl/cyVuir
+(pydwnldr)rkadam@rkadam-vbox:~/github/pydwnldr/src$ time python dwnldr.py http://ubuntu.mirrors.tds.net/pub/releases/15.10/ubuntu-15.10-desktop-amd64.iso
 Downloading ubuntu-15.10-desktop-amd64.iso 1178386432 bytes
 
 real    3m2.407s
