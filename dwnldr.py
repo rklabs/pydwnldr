@@ -4,7 +4,6 @@ import shutil
 import glob
 import os
 import sys
-import pdb
 
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import as_completed
@@ -82,7 +81,6 @@ def download_url(url):
 
         for future in as_completed(futures_to_parts):
             try:
-                pdb.set_trace()
                 if future.done():
                     print future.result()
             except Exception as e:
@@ -90,8 +88,6 @@ def download_url(url):
     executor.shutdown(wait=True)
  
 if __name__ == '__main__':
-    import pdb
-    pdb.set_trace() 
     if len(sys.argv) != 2:
         print 'usage: dwnldr.py <url>'
         sys.exit(1)
