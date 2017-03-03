@@ -1,4 +1,3 @@
-# pydwnldr
 Multi threaded downloader in Python 2.7 using concurrent.futures
 
 __Single thread__
